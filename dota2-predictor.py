@@ -116,7 +116,11 @@ matchups[7] = 'Beastcoast-Alliance'
 matchups[8] = 'Evil Geniuses-Elephant'
 
 #manually run each matchup..... lower matchups first
+
+#number of matches simulated
 sims = 100000
+
+#simulate matchups 5 through 8
 for i in range(5,9):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -134,7 +138,7 @@ for i in range(5,9):
 		eliminated_teams.append(teams[0])
 		matchups[i+4] = teams[1]
 
-#now initial upper bracket matchups
+#now initial upper bracket matchups 1-2
 for i in range(1,3):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -160,6 +164,7 @@ for i in range(1,3):
 #simple fix 
 matchups[13] = matchups[13][1:]
 
+#simulate matchups 3-4
 for i in range(3,5):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -185,6 +190,7 @@ for i in range(3,5):
 #simple fix 
 matchups[14] = matchups[14][1:]
 
+#simulate matchups 9-10
 for i in range(9,11):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -203,6 +209,7 @@ for i in range(9,11):
 		eliminated_teams.append(teams[0])
 matchups[15] = matchups[15][1:]
 
+#simulate matchups 11-12
 for i in range(11,13):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -221,6 +228,7 @@ for i in range(11,13):
 		eliminated_teams.append(teams[0])
 matchups[16] = matchups[16][1:]
 
+#simulate matchups 13-14
 for i in range(13,15):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -242,6 +250,7 @@ matchups[17] = matchups[17][1:]
 matchups[18] = matchups[18][1:]
 matchups[19] = matchups[19][1:]
 
+#simulate matchups 15-16
 for i in range(15,17):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -267,6 +276,7 @@ for i in range(15,17):
 			matchups[18] = matchups[18] + '-' + teams[0]
 			eliminated_teams.append(teams[1])
 
+#simulate matchups 17-18
 for i in range(17,19):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -285,6 +295,7 @@ for i in range(17,19):
 		eliminated_teams.append(teams[0])
 matchups[20] = matchups[20][1:]
 
+#simulate matchup 19
 for i in range(19,20):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -302,6 +313,7 @@ for i in range(19,20):
 		matchups[22] = matchups[22] + teams[1]
 		matchups[21] = matchups[21] + teams[0]
 
+#simulate matchup 20
 for i in range(20,21):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -319,6 +331,7 @@ for i in range(20,21):
 		matchups[21] = matchups[21] + '-' + teams[1]
 		eliminated_teams.append(teams[0])
 
+#simulate matchup 21
 for i in range(21,22):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
@@ -336,6 +349,7 @@ for i in range(21,22):
 		matchups[22] = matchups[22] + '-' + teams[1]
 		eliminated_teams.append(teams[0])
 
+#simulate matchup 22
 for i in range(22,23):
 	teams = matchups[i].split('-')
 	#simulate matches 2000 times to get accurate results
